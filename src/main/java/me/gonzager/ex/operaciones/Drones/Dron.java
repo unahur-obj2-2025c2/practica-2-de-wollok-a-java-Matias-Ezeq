@@ -1,13 +1,16 @@
 package me.gonzager.ex.operaciones.Drones;
 
+import me.gonzager.ex.operaciones.Drones.Misiones.Mision;
+
 public abstract class Dron {
     private Double autonomia = 0.0;
-    private static Integer procesamiento = 0;
+    private Integer procesamiento = 0;
     private Mision mision;
 
-    public Dron(Double autonomia, Mision mision) {
+    public Dron(Double autonomia, Mision mision, Integer procesamiento) {
         this.autonomia = autonomia;
         this.mision = mision;
+        this.procesamiento = procesamiento;
     }
 
     public Double getAutonomia() {
