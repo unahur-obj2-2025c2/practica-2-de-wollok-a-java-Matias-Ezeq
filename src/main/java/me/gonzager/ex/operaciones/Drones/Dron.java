@@ -26,8 +26,8 @@ public abstract class Dron {
         this.mision = mision;
     }
 
-    public Double eficienciaOperativa(){
-        return autonomia * 10 + mision.eficienciaOperativa();
+    public Integer eficienciaOperativa(){
+        return autonomia.intValue() * 10 + mision.eficienciaOperativa();
     }
 
     public abstract Boolean esAvanzadoSegunTipo();

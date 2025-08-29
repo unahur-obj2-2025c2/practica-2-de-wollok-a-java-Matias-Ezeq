@@ -3,7 +3,7 @@ package me.gonzager.ex.operaciones.Drones.Misiones;
 import me.gonzager.ex.operaciones.Drones.Dron;
 
 public class Transporte extends Mision{
-    private final Transporte instance = new Transporte();
+    private static final Transporte instance = new Transporte();
 
     public Transporte(){};
 
