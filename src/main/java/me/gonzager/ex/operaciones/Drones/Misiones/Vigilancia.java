@@ -18,7 +18,7 @@ public class Vigilancia extends Mision{
     }
 
     public List<Sensor> getSensores() {
-        return sensores;
+        return(new ArrayList<>(sensores));
     };
 
     @Override

@@ -3,9 +3,9 @@ package me.gonzager.ex.operaciones.Drones;
 import me.gonzager.ex.operaciones.Drones.Misiones.Mision;
 
 public abstract class Dron {
-    private Double autonomia = 0.0;
-    private Integer procesamiento = 0;
-    private Mision mision;
+    public Double autonomia = 0.0;
+    public Integer procesamiento = 0;
+    public Mision mision;
 
     public Dron(Double autonomia, Mision mision, Integer procesamiento) {
         this.autonomia = autonomia;
@@ -26,8 +26,8 @@ public abstract class Dron {
         this.mision = mision;
     }
 
-    public Integer eficienciaOperativa(){
-        return autonomia.intValue() * 10 + mision.eficienciaOperativa();
+    public Double eficienciaOperativa(){
+        return autonomia * 10 + mision.eficienciaOperativa();
     }
 
     public abstract Boolean esAvanzadoSegunTipo();
